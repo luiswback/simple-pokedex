@@ -1,0 +1,13 @@
+
+<img
+  src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/87044f58-c765-43c5-bc51-8613e3ac7ab1/ddew4m7-c69a2c41-518f-48ca-ba35-8ab1895464e0.png/v1/fill/w_1385,h_577,strp/logo_pokemon_recto__editable_con_photoshop_by_marisadiecisiete_ddew4m7-pre.png"
+width="200px">
+
+<div class="pokemon-list">
+  <app-pokemon-card
+    *ngFor="let pokemon of pokemonService.pokemons; index as i"
+    [pokemon]="pokemon.name"
+    [number]="i + 1 "
+  ></app-pokemon-card>
+</div>
+
